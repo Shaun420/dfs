@@ -8,6 +8,7 @@ import { defineConfig } from 'astro/config';
 // Import official Astro integrations
 import react from '@astrojs/react'; // Used for integrating React components
 import tailwind from '@astrojs/tailwind'; // Used for integrating Tailwind CSS
+import node from '@astrojs/node';
 
 // Import Node.js built-in modules for path manipulation
 import { fileURLToPath } from 'url'; // Used to convert file URLs to paths
@@ -45,6 +46,8 @@ const KEY_FILE = path.join(certsDir, "localhost+2-key.pem"); // <-- **VERIFY THI
 export default defineConfig({
   // --- Top-level Astro Configuration Options ---
   // These options apply to the entire Astro project build and dev server.
+  output: 'server',
+  adapter: node({ mode: 'standalone' }),
 
   // Configure the theme for the Astro error overlay displayed in the browser during development.
   astroErrorOverlayTheme: "dark",
@@ -75,7 +78,7 @@ export default defineConfig({
   server: {
 	host: true,
 	port: 4321,
-	allowedHosts: ['shaunak6.centralindia.cloudapp.azure.com', 'server.shaun420.eu.org'],
+	allowedHosts: ['all'],
 	// --- Configure proxying for API calls ---
     // This tells Astro's dev server to intercept browser requests that match a specified path
     // and forward them to a different target URL (your backend API Gateway).
@@ -140,5 +143,5 @@ export default defineConfig({
   // Add other project-specific configurations here as needed.
   // outDir: './dist', // Specify the build output directory
   // site: 'https://www.yourdfs.com', // Your production website URL
-  base: '/', // The base path for your project (if not hosted at the root)
+  // base: '/', // The base path for your project (if not hosted at the root)
 });
