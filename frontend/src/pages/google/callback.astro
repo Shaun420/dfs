@@ -1,0 +1,144 @@
+---
+// src/pages/google/callback.astro
+// This is the page Google redirects the user to after successful authentication.
+// It receives the 'code' and 'state' query parameters.
+
+// Import your main layout
+import MainLayout from '../../layouts/MainLayout.astro';
+
+// No React components needed for this page itself, the logic is in an inline script.
+---
+
+<!-- This part is the HTML/JSX output of the Astro page -->
+<MainLayout title="Processing Login..."> {/* Use your main layout */}
+  <div class="container mx-auto p-4 mt-16 text-center">
+    <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Processing Login...</h2>
+    <p class="text-gray-600 dark:text-gray-300 mb-6" id="status-message">Please wait, finalizing login...</p>
+    {/* You could add a spinner here */}
+    <div id="loading-spinner" class="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-primary-600 border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]" role="status">
+      <span class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Loading...</span>
+    </div>
+
+
+    {/* Client-side script to handle the OAuth callback */}
+    <script is:inline>
+      const statusMessageElement = document.getElementById('status-message');
+      const spinnerElement = document.getElementById('loading-spinner');
+
+      function updateStatus(message) {
+          if (statusMessageElement) {
+              statusMessageElement.textContent = message;
+          }
+           if (spinnerElement && message.includes('Error')) {
+              spinnerElement.style.display = 'none'; // Hide spinner on error
+           }
+      }
+
+      async function handleGoogleCallback() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const code = urlParams.get('code');
+        const state = urlParams.get('state'); // Remember state is for CSRF protection
+
+        // --- Check for errors from Google ---
+        const errorFromGoogle = urlParams.get('error');
+        const errorDescription = urlParams.get('error_description');
+        if (errorFromGoogle) {
+            console.error('Error received from Google:', errorFromGoogle, errorDescription);
+            updateStatus(`Login failed: ${errorDescription || errorFromGoogle}`);
+             // Redirect to the login page with the error
+            window.location.href = `/login?error=${encodeURIComponent(errorDescription || errorFromGoogle || 'Google login error')}`;
+            return; // Stop processing
+        }
+
+
+        // --- Check if authorization code is present ---
+        if (!code) {
+          console.error('Authorization code not found in callback URL.');
+          updateStatus('Login failed: Missing authorization code.');
+           // Redirect to the login page
+           window.location.href = `/login?error=${encodeURIComponent('Missing authorization code')}`;
+          return; // Stop processing
+        }
+
+        // --- Call your API server to exchange the code ---
+        // This fetch request goes to your backend's /google/callback endpoint via the Astro proxy.
+        // Pass the full original URL so the backend (using google-auth-oauthlib.flow) can use it.
+        const originalCallbackUrl = window.location.href; // This is the URL with code and state
+
+        updateStatus('Exchanging authorization code...');
+        try {
+          // Make the API call to your backend's callback handler
+          // We are fetching the *same* URL that the browser is currently on,
+          // but this fetch request goes through the Astro proxy to the backend.
+          // It includes the query parameters Google sent (code, state).
+          const response = await fetch(originalCallbackUrl, {
+            method: 'GET', // Match your Flask route's method
+            // Add the credentials option to include cookies!
+            credentials: 'include', // <-- ADD THIS LINE
+            // If your Flask backend needed the original URL passed explicitly in the body (e.g. POST),
+            // you would change method to 'POST', add headers, and add the body.
+            // But given your Flask code uses request.url, including cookies with GET is likely the correct path.
+          });
+
+          if (!response.ok) {
+            // Handle errors from your backend's token exchange process
+             const errorData = await response.json().catch(() => ({ message: `HTTP error! status: ${response.status}` }));
+             throw new Error(errorData.message || `Backend token exchange failed: HTTP ${response.status}`);
+          }
+
+          // --- SUCCESS ---
+          // If your Flask /google/callback successfully exchanged the code,
+          // it should have set the Flask session cookie and then redirected the BROWSER
+          // to your main app page (e.g., /files).
+          // The fetch() call here completed, but the browser will automatically follow
+          // the redirect issued by Flask's response headers.
+          // Therefore, the code below this point (within the try block) should generally
+          // *not* be reached if Flask issues a redirect.
+
+          // If Flask instead returned JSON on success, you would handle it here:
+          // const data = await response.json();
+          // if (data.success) {
+          //    updateStatus('Login successful!');
+          //    window.location.href = '/files'; // Manual redirect on frontend
+          // } else {
+          //    // ... handle JSON error ...
+          // }
+
+           // --- Fallback/Unexpected Case ---
+           // If Flask did not issue a redirect, we end up here.
+           // This might indicate an issue with the Flask callback's final redirect logic.
+           console.warn("Fetch to backend callback completed, but browser did not redirect. Checking auth status...");
+           updateStatus('Finalizing login...');
+           // Check auth status directly to confirm login and redirect
+           const authResponse = await fetch('/test', { credentials: 'include' }); // Also include credentials here!
+           const authData = await authResponse.json(); // Assuming /test returns { success: boolean, user?: string }
+
+           if (authData.success && authData.user) {
+               updateStatus('Login successful!');
+               window.location.href = '/files'; // Redirect to file browser
+           } else {
+               console.error('Auth check failed after callback process.', authData);
+               updateStatus('Login process incomplete.');
+               window.location.href = `/login?error=${encodeURIComponent('Login process incomplete')}`;
+           }
+
+
+        } catch (error) {
+          console.error('Error during backend token exchange fetch:', error);
+          updateStatus(`Login failed: ${error.message}`);
+           window.location.href = `/login?error=${encodeURIComponent(error.message)}`; // Redirect to login with error
+        } finally {
+            // Hide spinner regardless of outcome, unless the page is about to redirect
+             // Check if we are already redirecting (simple check based on location change)
+             // If window.location.href has changed from the original callback URL, assume redirect is happening
+            if (spinnerElement && window.location.href === originalCallbackUrl) {
+                 spinnerElement.style.display = 'none';
+            }
+        }
+      }
+
+      // Run the callback handler when the page loads
+      handleGoogleCallback();
+    </script>
+  </div>
+</MainLayout>

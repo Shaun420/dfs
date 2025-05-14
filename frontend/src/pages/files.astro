@@ -1,0 +1,64 @@
+---
+// src/pages/files/[[...path]].astro
+// This file handles the route /files AND all sub-routes like /files/folder1, /files/folder1/subfolder2, etc.
+
+// Import your main layout component
+import MainLayout from '../layouts/MainLayout.astro'; // Assuming MainLayout is the correct name
+
+// Import the React FileExplorer component
+// This is the main interactive component that manages the file view and uploads.
+// It handles its own state, navigation, data fetching, and renders its internal components.
+import FileExplorer from '../components/FileExplorer.jsx';
+
+// Import the Header component if it's a separate React island for authentication status
+// If Header is purely static HTML, you can remove the client:load directive.
+import Header from '../components/Header.jsx';
+
+// Get the path segments from the URL via Astro.params in the frontmatter script block
+// Astro.params is available during Astro's server rendering.
+// For the route /files, params.path will be undefined or an empty array [].
+// For the route /files/folder1, params.path will be ['folder1'].
+// For the route /files/folder1/subfolder, params.path will be ['folder1', 'subfolder'].
+const path = Astro.params.path || "";
+
+// Construct the initial directory string like '/', '/folder1/', '/folder1/subfolder/', etc.
+// This is the path format your FileExplorer component (and likely your API) expects.
+const initialDir = '/' + path + (path.length > 0 ? '/' : '');
+
+// No React hooks or component function definition needed here.
+---
+
+<!-- This part is the HTML/JSX output of the Astro page -->
+<MainLayout title={`DFS: ${initialDir}`}> {/* Use the main layout and set the title dynamically */}
+
+  {/*
+    Render the Header React component as an island.
+    It needs `client:load` if it contains interactive elements or uses React state/effects.
+	  <Header client:load />
+  */}
+
+  <div class="container mx-auto p-4 mt-16">
+
+    {/*
+      Render the FileExplorer React component as the main interactive part of the page.
+      It MUST use a `client:` directive (like `client:load`) because it uses React state and effects.
+
+      Pass the initial path determined from the URL (initialDir) as a prop.
+      Your FileExplorer component accepts an `initialPath` prop and uses it
+      to initialize its internal state and handle navigation/fetching for that path.
+
+      FileExplorer is expected to render its own toolbar, breadcrumb, file list,
+      and modals (uploader, rename, new folder) internally.
+    */}
+    <FileExplorer
+        initialPath={initialDir}
+        client:load
+    />
+
+    {/* Do NOT render FileUploader, BreadcrumbNav, etc., directly here
+       if your FileExplorer component already includes them in its own render method. */}
+
+  </div>
+</MainLayout>
+
+<!-- Astro pages do not have a default export function -->

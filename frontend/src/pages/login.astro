@@ -1,0 +1,94 @@
+---
+// src/pages/login.astro
+// This Astro page serves the /login route.
+// Its primary purpose is to inform the user that login is required
+// and provide a link to initiate the Google OAuth flow handled by the backend API.
+// It also displays any error messages passed via URL query parameters
+// (e.g., after a failed login attempt via the callback).
+
+// Import your main layout component.
+// This layout provides the overall structure, including the header (which might
+// display the login button if the user is already on another page) and dark mode setup.
+import MainLayout from '../layouts/MainLayout.astro'; // Assuming MainLayout is the correct name
+
+// No React components are strictly needed directly on this page for the login button itself,
+// as we are using a standard browser navigation via an <a> tag.
+// The Header component in the layout might display a login/logout button based on context,
+// but this specific page's link is the primary entry point for an unauthenticated user.
+
+const BACKEND_URL = "https://localhost";
+const BACKEND_LOGIN_URL = `${BACKEND_URL}/google/login`;
+
+// No React hooks or component function definition is used directly in this Astro page's frontmatter.
+---
+
+<!-- This is the HTML/JSX output of the Astro page, rendered on the server. -->
+{/* Use your main layout component to wrap the page content. */}
+<MainLayout title="Login Required"> {/* Set the page title */}
+
+  {/* Main content container, centered text, and some padding/margin utilities (using Tailwind CSS). */}
+  {/* The dark: classes are applied here, relying on the 'dark' class being added to the <html> element by the layout's inline script. */}
+  <div class="container mx-auto p-4 mt-16 text-center">
+
+    {/* Heading indicating that login is needed. */}
+    <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Login Required</h2>
+
+    {/* Paragraph explaining the login method. */}
+    <p class="text-gray-600 dark:text-gray-300 mb-6">
+      Please log in using your Google account to access the Distributed File System.
+    </p>
+
+    {/* --- The Login Initiation Link --- */}
+    {/* This <a> tag acts as the button. Clicking it causes the browser to navigate
+        directly to the specified URL. */}
+    {/* The href points to your backend API Gateway's Google login endpoint.
+        Your Astro dev server proxy or production reverse proxy must be
+        configured to forward requests starting with /google to your backend Flask app. */}
+    {/* Your Flask backend's /google/login endpoint is expected to handle this GET request
+        by initiating the Google OAuth flow (setting session state, generating auth URL)
+        and then redirecting the user's browser to Google's authentication server. */}
+    <a id="login-link"
+      href={BACKEND_LOGIN_URL}
+      class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 dark:bg-primary-700 dark:hover:bg-primary-600 dark:focus:ring-offset-gray-800"
+    >
+      Login with Google
+    </a>
+
+    <script is:inline>
+      // Access the URL query parameters.
+      const urlParams = new URLSearchParams(window.location.search);
+      const errorMessage = urlParams.get('error'); // Get the value of the 'error' query parameter.
+
+      // Check if an error message exists in the URL.
+      if (errorMessage) {
+        // Decode the error message (it might be URL-encoded).
+        const decodedMessage = decodeURIComponent(errorMessage);
+
+        // Create a new paragraph element to hold the error message.
+        const errorElement = document.createElement('p');
+        // Add Tailwind classes for styling the error message (red text, margin top).
+        errorElement.className = 'mt-4 text-sm text-red-600 dark:text-red-400';
+        // Set the text content of the error element.
+        errorElement.textContent = 'Login failed: ' + decodedMessage;
+
+        // Find the container where the login elements are located.
+        const container = document.querySelector('.container');
+
+        // Find the login link element within the container.
+        const loginLink = container?.getElementById("login-link");
+
+        // Insert the error message after the login link if found,
+        // otherwise, append it to the container as a fallback.
+        if (loginLink) {
+             loginLink.after(errorElement); // Insert the error element right after the link.
+         } else if (container) {
+             container.appendChild(errorElement); // If link not found, just append to the container.
+         }
+      }
+    </script>
+    {/* ----------------------------------------- */}
+
+  </div>
+</MainLayout>
+
+<!-- Astro pages do not use a default export function at the end of the file. -->

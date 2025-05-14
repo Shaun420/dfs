@@ -1,0 +1,77 @@
+---
+// src/pages/index.astro
+// This page serves the dashboard.
+// It uses MainLayout and includes the DashboardContent React component
+// which handles displaying auth-dependent content client-side via Nanostores.
+
+import MainLayout from '../layouts/MainLayout.astro';
+
+// Import the DashboardContent React component
+import DashboardContent from '../components/DashboardContent.jsx'; // <-- Import the client component
+
+// Remove server-side auth check from frontmatter
+// import { checkAuth } from '../libs/api'; // Remove this import
+// let isAuthenticated = false; // Remove these variables
+// let username = null; // Remove these variables
+// interface AuthData { ... } // Remove this interface
+// try { const authData = await checkAuth(); ... } // Remove this try/catch block
+
+// Remove frontmatter debug logs
+// console.log("Debug index 2");
+
+// Stats (these would come from your API in a real implementation)
+const stats = {
+  totalFiles: 128,
+  totalStorage: '2.4 GB',
+  nodes: 3,
+  availability: '99.9%'
+};
+
+---
+
+{/* Use MainLayout to wrap the page content */}
+<MainLayout title="Dashboard">
+
+	{/* Remove template debug logs */}
+	{/* {console.log("Debug index 1")} */}
+
+	{/* Main content area - this gets placed into MainLayout's <main> slot */}
+	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+      {/* --- Render the DashboardContent React component here --- */}
+      {/* This component handles displaying auth-dependent parts client-side. */}
+      {/* It does NOT need a client: directive here, as it's a child of AppRoot, which is client:load. */}
+      <DashboardContent /> {/* <-- Render the client component */}
+
+      {/*
+         The rest of the static dashboard content (Stats, Quick Actions, System Overview)
+         could theoretically remain here in index.astro's template if they are *purely static*
+         and do not need to re-render based on auth status. However, Quick Actions links
+         might lead to pages requiring auth, and Stats *could* be auth-dependent.
+         Encapsulating *all* the dashboard content (or at least the main blocks)
+         within DashboardContent.jsx is cleaner if you need to control loading states
+         or conditionally render sections based on auth status client-side.
+         Let's move ALL content inside DashboardContent.jsx for consistency with auth-dependency.
+      */}
+
+      {/* Move the Stats, Quick Actions, System Overview JSX into DashboardContent.jsx */}
+      {/* Remove the following blocks from index.astro's template: */}
+      {/* <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4 mb-8"> ... Stats JSX ... </div> */}
+      {/* <div class="bg-white dark:bg-gray-800 shadow rounded-lg mb-8"> ... Quick Actions JSX ... </div> */}
+      {/* <div class="bg-white dark:bg-gray-800 shadow rounded-lg"> ... System Overview JSX ... </div> */}
+
+
+    </div>
+
+	{/* Remove template debug logs */}
+	{/* {console.log("Debug index 6")} */}
+
+</MainLayout>
+
+{/* Client-side script remains, runs independently */}
+<script>
+  // This script will run on the client side after the page loads.
+  document.addEventListener('DOMContentLoaded', () => {
+    console.log('Dashboard page loaded on client.'); // Updated log message
+  });
+</script>

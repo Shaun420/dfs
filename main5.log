@@ -1,0 +1,967 @@
+2025-04-05 19:03:03,129 - ERROR - Error removing stale PID file for port 5001: [WinError 32] The process cannot access the file because it is being used by another process: 'node_5001.pid'
+2025-04-05 19:03:03,129 - ERROR - Error removing stale PID file for port 5002: [WinError 32] The process cannot access the file because it is being used by another process: 'node_5002.pid'
+2025-04-05 19:03:03,129 - ERROR - Error removing stale PID file for port 5003: [WinError 32] The process cannot access the file because it is being used by another process: 'node_5003.pid'
+2025-04-05 19:03:03,135 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-05 19:03:04,940 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.171.12:5000
+2025-04-05 19:03:04,941 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-05 19:03:07,199 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5001): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021EFABF9340>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-05 19:03:07,201 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-05 19:03:11,260 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5002): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021EFAC1CCB0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-05 19:03:17,330 - INFO - 127.0.0.1 - - [05/Apr/2025 19:03:17] "GET / HTTP/1.1" 200 -
+2025-04-05 19:03:19,126 - INFO - 127.0.0.1 - - [05/Apr/2025 19:03:19] "GET /upload HTTP/1.1" 200 -
+2025-04-05 19:03:21,320 - INFO - 127.0.0.1 - - [05/Apr/2025 19:03:21] "GET /browse HTTP/1.1" 200 -
+2025-04-05 19:03:23,622 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-05 19:03:27,699 - INFO - 127.0.0.1 - - [05/Apr/2025 19:03:27] "[32mGET /download/dfs/avatar.jpg HTTP/1.1[0m" 302 -
+2025-04-05 19:03:27,712 - INFO - 127.0.0.1 - - [05/Apr/2025 19:03:27] "GET /browse HTTP/1.1" 200 -
+2025-04-05 19:04:11,263 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-05 19:04:15,344 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5001): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021EFAC1CB60>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-05 19:04:15,347 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-05 19:04:19,426 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5002): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021EFAC1FEC0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-05 19:04:37,226 - INFO - Terminating subprocesses...
+2025-04-05 19:04:37,226 - INFO - All subprocesses terminated.
+2025-04-05 19:04:37,226 - INFO - Removed PID file for port 5001
+2025-04-05 19:04:37,226 - INFO - Removed PID file for port 5002
+2025-04-05 19:04:37,229 - INFO - Removed PID file for port 5003
+2025-04-05 19:04:39,906 - INFO - Started node.py on port 5001 with PID 7912
+2025-04-05 19:04:39,924 - INFO - Started node.py on port 5002 with PID 17484
+2025-04-05 19:04:39,944 - INFO - Started node.py on port 5003 with PID 16608
+2025-04-05 19:04:39,951 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-05 19:04:41,337 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.171.12:5000
+2025-04-05 19:04:41,337 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-05 19:04:41,975 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a HTTP/11" 200 89967
+2025-04-05 19:04:41,977 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-05 19:04:44,007 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a HTTP/11" 200 89967
+2025-04-05 19:04:46,329 - INFO - 127.0.0.1 - - [05/Apr/2025 19:04:46] "GET /browse HTTP/1.1" 200 -
+2025-04-05 19:04:47,638 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-05 19:04:49,666 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a HTTP/11" 200 89967
+2025-04-05 19:04:49,666 - INFO - 127.0.0.1 - - [05/Apr/2025 19:04:49] "GET /download/dfs/avatar.jpg HTTP/1.1" 200 -
+2025-04-05 19:05:44,009 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-05 19:05:46,048 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a HTTP/11" 200 89967
+2025-04-05 19:05:46,048 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-05 19:05:48,088 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a HTTP/11" 200 89967
+2025-04-05 19:06:48,090 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-05 19:06:50,142 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a HTTP/11" 200 89967
+2025-04-05 19:06:50,147 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-05 19:06:52,170 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a HTTP/11" 200 89967
+2025-04-05 19:07:52,174 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-05 19:07:54,226 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a HTTP/11" 200 89967
+2025-04-05 19:07:54,227 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-05 19:07:56,268 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a HTTP/11" 200 89967
+2025-04-05 19:08:56,270 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-05 19:08:58,302 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a HTTP/11" 200 89967
+2025-04-05 19:08:58,305 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-05 19:09:00,327 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a HTTP/11" 200 89967
+2025-04-05 19:10:00,333 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-05 19:10:02,379 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a HTTP/11" 200 89967
+2025-04-05 19:10:02,382 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-05 19:10:04,413 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a HTTP/11" 200 89967
+2025-04-05 19:11:04,416 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-05 19:11:06,473 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a HTTP/11" 200 89967
+2025-04-05 19:11:06,475 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-05 19:11:08,504 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a HTTP/11" 200 89967
+2025-04-05 19:12:08,509 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-05 19:12:10,534 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a HTTP/11" 200 89967
+2025-04-05 19:12:10,536 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-05 19:12:12,574 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a HTTP/11" 200 89967
+2025-04-05 19:13:12,577 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-05 19:13:14,616 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a HTTP/11" 200 89967
+2025-04-05 19:13:14,622 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-05 19:13:16,647 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a HTTP/11" 200 89967
+2025-04-05 19:14:16,653 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-05 19:14:18,687 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a HTTP/11" 200 89967
+2025-04-05 19:14:18,689 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-05 19:14:20,722 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a HTTP/11" 200 89967
+2025-04-05 19:15:20,724 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-05 19:15:22,747 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a HTTP/11" 200 89967
+2025-04-05 19:15:22,752 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-05 19:15:24,785 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a HTTP/11" 200 89967
+2025-04-05 19:16:24,788 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-05 19:16:26,829 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a HTTP/11" 200 89967
+2025-04-05 19:16:26,831 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-05 19:16:28,881 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a HTTP/11" 200 89967
+2025-04-05 19:17:28,885 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-05 19:17:30,916 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a HTTP/11" 200 89967
+2025-04-05 19:17:30,918 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-05 19:17:32,945 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a HTTP/11" 200 89967
+2025-04-05 19:18:32,947 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-05 19:18:34,996 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a HTTP/11" 200 89967
+2025-04-05 19:18:34,999 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-05 19:18:37,008 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a HTTP/11" 200 89967
+2025-04-05 19:19:37,018 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-05 19:19:39,058 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a HTTP/11" 200 89967
+2025-04-05 19:19:39,060 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-05 19:19:41,087 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a HTTP/11" 200 89967
+2025-04-05 19:20:41,095 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-05 19:20:43,127 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a HTTP/11" 200 89967
+2025-04-05 19:20:43,130 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-05 19:20:45,175 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a HTTP/11" 200 89967
+2025-04-05 19:21:45,180 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-05 19:21:47,199 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a HTTP/11" 200 89967
+2025-04-05 19:21:47,202 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-05 19:21:49,233 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a HTTP/11" 200 89967
+2025-04-05 19:22:49,236 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-05 19:22:51,274 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a HTTP/11" 200 89967
+2025-04-05 19:22:51,276 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-05 19:22:53,302 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a HTTP/11" 200 89967
+2025-04-05 19:23:53,306 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-05 19:23:55,344 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a HTTP/11" 200 89967
+2025-04-05 19:23:55,348 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-05 19:23:57,384 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a HTTP/11" 200 89967
+2025-04-05 19:24:57,385 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-05 19:24:59,432 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a HTTP/11" 200 89967
+2025-04-05 19:24:59,434 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-05 19:25:01,464 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a HTTP/11" 200 89967
+2025-04-05 19:26:01,467 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-05 19:26:03,507 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a HTTP/11" 200 89967
+2025-04-05 19:26:03,511 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-05 19:26:05,554 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a HTTP/11" 200 89967
+2025-04-05 19:27:05,560 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-05 19:27:07,585 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a HTTP/11" 200 89967
+2025-04-05 19:27:07,587 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-05 19:27:09,625 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a HTTP/11" 200 89967
+2025-04-05 19:27:37,817 - INFO - Terminating subprocesses...
+2025-04-05 19:27:37,842 - INFO - All subprocesses terminated.
+2025-04-05 19:27:39,734 - INFO - Node already running on port 5001 with PID 7912
+2025-04-05 19:27:39,734 - INFO - Node already running on port 5002 with PID 17484
+2025-04-05 19:27:39,734 - INFO - Node already running on port 5003 with PID 16608
+2025-04-05 19:27:39,740 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-05 19:27:41,162 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.171.12:5000
+2025-04-05 19:27:41,162 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-05 19:27:43,794 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5001): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DEC7B25790>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-05 19:27:43,795 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-05 19:27:47,866 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5002): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DECA99D580>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-05 19:28:47,868 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-05 19:28:51,942 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5001): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DECA99DC40>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-05 19:28:51,944 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-05 19:28:56,000 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5002): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DECA99EDE0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-05 19:29:56,005 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-05 19:30:00,060 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5001): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DECA974EF0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-05 19:30:00,062 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-05 19:30:04,121 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5002): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DECA99EBA0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-05 19:31:20,487 - INFO - Started node.py on port 5001 with PID 9396
+2025-04-05 19:31:20,506 - INFO - Started node.py on port 5002 with PID 19912
+2025-04-05 19:31:20,525 - INFO - Started node.py on port 5003 with PID 23336
+2025-04-05 19:31:20,531 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-05 19:31:21,843 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.171.12:5000
+2025-04-05 19:31:21,843 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-05 19:31:22,591 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-05 19:31:22,593 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-05 19:31:24,628 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-05 19:31:31,568 - INFO - Terminating subprocesses...
+2025-04-05 19:31:31,593 - INFO - All subprocesses terminated.
+2025-04-05 19:34:24,284 - INFO - Started node.py on port 5001 with PID 27936
+2025-04-05 19:34:24,313 - INFO - Started node.py on port 5002 with PID 3284
+2025-04-05 19:34:24,340 - INFO - Started node.py on port 5003 with PID 29844
+2025-04-05 19:34:24,349 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-05 19:34:25,642 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.171.12:5000
+2025-04-05 19:34:25,642 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-05 19:34:26,409 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-05 19:34:26,413 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-05 19:34:28,436 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-05 19:35:28,440 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-05 19:35:30,465 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-05 19:35:30,469 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-05 19:35:32,497 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-05 19:36:32,502 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-05 19:36:36,595 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5001): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000028DD5366C90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-05 19:36:36,597 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-05 19:36:40,670 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5002): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000028DD5389BE0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-05 19:36:55,532 - ERROR - Error removing stale PID file for port 5001: [WinError 32] The process cannot access the file because it is being used by another process: 'node_5001.pid'
+2025-04-05 19:36:55,532 - ERROR - Error removing stale PID file for port 5002: [WinError 32] The process cannot access the file because it is being used by another process: 'node_5002.pid'
+2025-04-05 19:36:55,532 - ERROR - Error removing stale PID file for port 5003: [WinError 32] The process cannot access the file because it is being used by another process: 'node_5003.pid'
+2025-04-05 19:36:55,539 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-05 19:36:57,152 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.171.12:5000
+2025-04-05 19:36:57,152 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-05 19:36:59,599 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5001): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002A8605C51F0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-05 19:36:59,600 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-05 19:36:59,678 - INFO - Terminating subprocesses...
+2025-04-05 19:36:59,678 - INFO - Removed PID file for port 5001
+2025-04-05 19:36:59,678 - INFO - Removed PID file for port 5002
+2025-04-05 19:36:59,678 - INFO - Removed PID file for port 5003
+2025-04-05 19:36:59,678 - INFO - All subprocesses terminated.
+2025-04-05 19:37:20,288 - INFO - Started node.py on port 5001 with PID 31432
+2025-04-05 19:37:20,307 - INFO - Started node.py on port 5002 with PID 14844
+2025-04-05 19:37:20,326 - INFO - Started node.py on port 5003 with PID 25224
+2025-04-05 19:37:20,334 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-05 19:37:21,729 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.171.12:5000
+2025-04-05 19:37:21,730 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-05 19:37:22,368 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-05 19:37:22,368 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-05 19:37:24,390 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-05 19:37:24,768 - INFO - Terminating subprocesses...
+2025-04-05 19:37:24,791 - INFO - All subprocesses terminated.
+2025-04-05 19:38:37,545 - INFO - Started node.py on port 5001 with PID 29760
+2025-04-05 19:38:37,561 - INFO - Started node.py on port 5002 with PID 15860
+2025-04-05 19:38:37,582 - INFO - Started node.py on port 5003 with PID 30124
+2025-04-05 19:38:37,588 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-05 19:38:39,161 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.171.12:5000
+2025-04-05 19:38:39,161 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-05 19:38:39,638 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-05 19:38:39,638 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-05 19:38:41,675 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-05 19:39:41,678 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-05 19:39:43,703 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-05 19:39:43,706 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-05 19:39:45,728 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-05 19:40:45,731 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-05 19:40:47,756 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-05 19:40:47,761 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-05 19:40:49,798 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-05 19:42:01,545 - ERROR - Error removing stale PID file for port 5001: [WinError 32] The process cannot access the file because it is being used by another process: 'node_5001.pid'
+2025-04-05 19:42:01,545 - ERROR - Error removing stale PID file for port 5002: [WinError 32] The process cannot access the file because it is being used by another process: 'node_5002.pid'
+2025-04-05 19:42:01,545 - ERROR - Error removing stale PID file for port 5003: [WinError 32] The process cannot access the file because it is being used by another process: 'node_5003.pid'
+2025-04-05 19:42:01,552 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-05 19:42:03,634 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.171.12:5000
+2025-04-05 19:42:03,634 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-05 19:42:05,632 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5001): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000132F08666F0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-05 19:42:05,632 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-05 19:42:06,172 - INFO - Terminating subprocesses...
+2025-04-05 19:42:06,173 - INFO - Removed PID file for port 5001
+2025-04-05 19:42:06,173 - INFO - Removed PID file for port 5002
+2025-04-05 19:42:06,173 - INFO - Removed PID file for port 5003
+2025-04-05 19:42:06,173 - INFO - All subprocesses terminated.
+2025-04-05 19:42:09,188 - INFO - Started node.py on port 5001 with PID 27732
+2025-04-05 19:42:09,205 - INFO - Started node.py on port 5002 with PID 7984
+2025-04-05 19:42:09,224 - INFO - Started node.py on port 5003 with PID 30596
+2025-04-05 19:42:09,235 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-05 19:42:10,535 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.171.12:5000
+2025-04-05 19:42:10,535 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-05 19:42:11,282 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-05 19:42:11,285 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-05 19:42:13,323 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-05 19:42:20,185 - INFO - Terminating subprocesses...
+2025-04-05 19:42:20,206 - INFO - All subprocesses terminated.
+2025-04-05 19:42:33,084 - INFO - Node already running on port 5001 with PID 27732
+2025-04-05 19:42:33,084 - INFO - Node already running on port 5002 with PID 7984
+2025-04-05 19:42:33,084 - INFO - Node already running on port 5003 with PID 30596
+2025-04-05 19:42:33,094 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-05 19:42:34,465 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.171.12:5000
+2025-04-05 19:42:34,465 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-05 19:42:37,174 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5001): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021833EA5F40>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-05 19:42:37,176 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-05 19:42:41,257 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5002): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021833EDE180>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-05 19:46:20,044 - ERROR - Error removing stale PID file for port 5001: [WinError 32] The process cannot access the file because it is being used by another process: 'node_5001.pid'
+2025-04-05 19:46:20,045 - ERROR - Error removing stale PID file for port 5002: [WinError 32] The process cannot access the file because it is being used by another process: 'node_5002.pid'
+2025-04-05 19:46:20,045 - ERROR - Error removing stale PID file for port 5003: [WinError 32] The process cannot access the file because it is being used by another process: 'node_5003.pid'
+2025-04-05 19:46:20,051 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-05 19:46:21,496 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.171.12:5000
+2025-04-05 19:46:21,496 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-05 19:46:23,525 - INFO - Terminating subprocesses...
+2025-04-05 19:46:23,526 - INFO - Removed PID file for port 5001
+2025-04-05 19:46:23,527 - INFO - Removed PID file for port 5002
+2025-04-05 19:46:23,527 - INFO - Removed PID file for port 5003
+2025-04-05 19:46:23,527 - INFO - All subprocesses terminated.
+2025-04-05 19:46:27,875 - INFO - Started node.py on port 5001 with PID 26360
+2025-04-05 19:46:27,899 - INFO - Started node.py on port 5002 with PID 6444
+2025-04-05 19:46:27,924 - INFO - Started node.py on port 5003 with PID 11432
+2025-04-05 19:46:27,932 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-05 19:46:29,379 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.171.12:5000
+2025-04-05 19:46:29,379 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-05 19:46:30,002 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-05 19:46:30,005 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-05 19:46:32,049 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-05 19:46:34,450 - INFO - Terminating subprocesses...
+2025-04-05 19:46:34,469 - INFO - All subprocesses terminated.
+2025-04-05 19:51:46,826 - INFO - Node already running on port 5001 with PID 26360
+2025-04-05 19:51:46,826 - INFO - Node already running on port 5002 with PID 6444
+2025-04-05 19:51:46,826 - INFO - Node already running on port 5003 with PID 11432
+2025-04-05 19:51:46,832 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-05 19:51:48,113 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.171.12:5000
+2025-04-05 19:51:48,113 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-05 19:51:50,917 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5001): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001A706CA56D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-05 19:51:50,917 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-05 19:51:54,979 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5002): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001A706CC90A0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-05 19:52:23,303 - INFO - Started node.py on port 5001 with PID 26532
+2025-04-05 19:52:23,322 - INFO - Started node.py on port 5002 with PID 30512
+2025-04-05 19:52:23,343 - INFO - Started node.py on port 5003 with PID 10076
+2025-04-05 19:52:23,353 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-05 19:52:24,816 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.171.12:5000
+2025-04-05 19:52:24,816 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-05 19:52:25,398 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-05 19:52:25,400 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-05 19:52:27,463 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-05 19:52:30,434 - INFO - Terminating subprocesses...
+2025-04-05 19:52:30,443 - INFO - Removed PID file for port 5001
+2025-04-05 19:52:30,443 - INFO - Removed PID file for port 5002
+2025-04-05 19:52:30,445 - INFO - Removed PID file for port 5003
+2025-04-05 19:52:30,445 - INFO - All subprocesses terminated.
+2025-04-05 19:52:40,723 - INFO - Started node.py on port 5001 with PID 19088
+2025-04-05 19:52:40,743 - INFO - Started node.py on port 5002 with PID 18884
+2025-04-05 19:52:40,772 - INFO - Started node.py on port 5003 with PID 30648
+2025-04-05 19:52:40,780 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-05 19:52:42,231 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.171.12:5000
+2025-04-05 19:52:42,231 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-05 19:52:42,832 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-05 19:52:42,832 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-05 19:52:44,883 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-05 19:52:46,316 - INFO - Terminating subprocesses...
+2025-04-05 19:52:46,350 - INFO - Removed PID file for port 5001
+2025-04-05 19:52:46,350 - INFO - Removed PID file for port 5002
+2025-04-05 19:52:46,350 - INFO - Removed PID file for port 5003
+2025-04-05 19:52:46,350 - INFO - All subprocesses terminated.
+2025-04-08 09:49:47,420 - INFO - Started node.py on port 5001 with PID 6560
+2025-04-08 09:49:47,443 - INFO - Started node.py on port 5002 with PID 18980
+2025-04-08 09:49:47,463 - INFO - Started node.py on port 5003 with PID 18748
+2025-04-08 09:49:47,471 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-08 09:49:47,501 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.171.12:5000
+2025-04-08 09:49:47,501 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-08 09:49:49,502 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-08 09:49:49,502 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-08 09:49:51,544 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-08 09:50:02,441 - INFO - 127.0.0.1 - - [08/Apr/2025 09:50:02] "GET / HTTP/1.1" 200 -
+2025-04-08 09:50:03,635 - INFO - 127.0.0.1 - - [08/Apr/2025 09:50:03] "GET /browse HTTP/1.1" 200 -
+2025-04-08 09:50:05,785 - INFO - 127.0.0.1 - - [08/Apr/2025 09:50:05] "GET / HTTP/1.1" 200 -
+2025-04-08 09:50:51,559 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-08 09:50:53,604 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-08 09:50:53,604 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-08 09:50:55,632 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-08 09:51:55,635 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-08 09:51:57,665 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-08 09:51:57,670 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-08 09:51:59,698 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-08 09:52:59,702 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-08 09:53:01,737 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-08 09:53:01,737 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-08 09:53:03,792 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-08 09:54:03,794 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-08 09:54:05,834 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-08 09:54:05,836 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-08 09:54:07,881 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-08 09:55:06,073 - INFO - 127.0.0.1 - - [08/Apr/2025 09:55:06] "GET / HTTP/1.1" 200 -
+2025-04-08 09:55:06,738 - INFO - 127.0.0.1 - - [08/Apr/2025 09:55:06] "GET /browse HTTP/1.1" 200 -
+2025-04-08 09:55:07,885 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-08 09:55:07,935 - INFO - 127.0.0.1 - - [08/Apr/2025 09:55:07] "GET / HTTP/1.1" 200 -
+2025-04-08 09:55:09,921 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-08 09:55:09,926 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-08 09:55:11,970 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-08 09:55:13,541 - INFO - 127.0.0.1 - - [08/Apr/2025 09:55:13] "[33mGET /login HTTP/1.1[0m" 404 -
+2025-04-08 09:55:17,616 - INFO - Terminating subprocesses...
+2025-04-08 09:55:17,616 - INFO - Removed PID file for port 5001
+2025-04-08 09:55:17,616 - INFO - Removed PID file for port 5002
+2025-04-08 09:55:17,616 - INFO - Removed PID file for port 5003
+2025-04-08 09:55:17,616 - INFO - All subprocesses terminated.
+2025-04-08 09:55:18,788 - INFO - Started node.py on port 5001 with PID 14908
+2025-04-08 09:55:18,804 - INFO - Started node.py on port 5002 with PID 7072
+2025-04-08 09:55:18,830 - INFO - Started node.py on port 5003 with PID 7156
+2025-04-08 09:55:18,840 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-08 09:55:18,872 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.171.12:5000
+2025-04-08 09:55:18,872 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-08 09:55:20,874 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-08 09:55:20,874 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-08 09:55:22,908 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-08 09:55:28,286 - INFO - 127.0.0.1 - - [08/Apr/2025 09:55:28] "GET /login HTTP/1.1" 200 -
+2025-04-08 09:55:31,055 - INFO - 127.0.0.1 - - [08/Apr/2025 09:55:31] "GET /register HTTP/1.1" 200 -
+2025-04-08 09:55:55,380 - INFO - 127.0.0.1 - - [08/Apr/2025 09:55:55] "[32mGET /upload HTTP/1.1[0m" 302 -
+2025-04-08 09:55:55,392 - INFO - 127.0.0.1 - - [08/Apr/2025 09:55:55] "GET /login?next=/upload HTTP/1.1" 200 -
+2025-04-08 09:55:55,468 - INFO - 127.0.0.1 - - [08/Apr/2025 09:55:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-08 09:56:00,912 - INFO - 127.0.0.1 - - [08/Apr/2025 09:56:00] "[33mGET /api HTTP/1.1[0m" 404 -
+2025-04-08 09:56:05,798 - INFO - 127.0.0.1 - - [08/Apr/2025 09:56:05] "[33mGET /download HTTP/1.1[0m" 404 -
+2025-04-08 09:56:12,780 - INFO - 127.0.0.1 - - [08/Apr/2025 09:56:12] "[32mGET /api/file HTTP/1.1[0m" 302 -
+2025-04-08 09:56:12,793 - INFO - 127.0.0.1 - - [08/Apr/2025 09:56:12] "GET /login?next=/api/file HTTP/1.1" 200 -
+2025-04-08 09:56:22,911 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-08 09:56:24,948 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-08 09:56:24,948 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-08 09:56:26,984 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-08 09:56:38,684 - INFO - 127.0.0.1 - - [08/Apr/2025 09:56:38] "GET /register HTTP/1.1" 200 -
+2025-04-08 09:56:43,841 - INFO - 127.0.0.1 - - [08/Apr/2025 09:56:43] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-04-08 09:56:43,902 - INFO - 127.0.0.1 - - [08/Apr/2025 09:56:43] "GET /login HTTP/1.1" 200 -
+2025-04-08 09:56:48,013 - INFO - 127.0.0.1 - - [08/Apr/2025 09:56:48] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-08 09:56:48,042 - INFO - 127.0.0.1 - - [08/Apr/2025 09:56:48] "GET / HTTP/1.1" 200 -
+2025-04-08 09:56:49,364 - INFO - 127.0.0.1 - - [08/Apr/2025 09:56:49] "GET /browse HTTP/1.1" 200 -
+2025-04-08 09:56:52,868 - INFO - 127.0.0.1 - - [08/Apr/2025 09:56:52] "GET /browse HTTP/1.1" 200 -
+2025-04-08 09:57:12,019 - INFO - 127.0.0.1 - - [08/Apr/2025 09:57:12] "GET /upload HTTP/1.1" 200 -
+2025-04-08 09:57:26,988 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-08 09:57:29,015 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-08 09:57:29,018 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-08 09:57:31,050 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-08 09:58:10,795 - INFO - Terminating subprocesses...
+2025-04-08 09:58:10,805 - INFO - Removed PID file for port 5001
+2025-04-08 09:58:10,805 - INFO - Removed PID file for port 5002
+2025-04-08 09:58:10,805 - INFO - Removed PID file for port 5003
+2025-04-08 09:58:10,805 - INFO - All subprocesses terminated.
+2025-04-08 09:58:31,001 - INFO - Started node.py on port 5001 with PID 18140
+2025-04-08 09:58:31,016 - INFO - Started node.py on port 5002 with PID 17208
+2025-04-08 09:58:31,030 - INFO - Started node.py on port 5003 with PID 18056
+2025-04-08 09:58:31,036 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-08 09:58:31,059 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.171.12:5000
+2025-04-08 09:58:31,059 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-08 09:58:33,078 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-08 09:58:33,079 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-08 09:58:33,108 - INFO - 127.0.0.1 - - [08/Apr/2025 09:58:33] "GET / HTTP/1.1" 200 -
+2025-04-08 09:58:35,105 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-08 09:58:36,915 - INFO - 127.0.0.1 - - [08/Apr/2025 09:58:36] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-04-08 09:58:36,931 - INFO - 127.0.0.1 - - [08/Apr/2025 09:58:36] "GET /login HTTP/1.1" 200 -
+2025-04-08 09:59:14,527 - INFO - 127.0.0.1 - - [08/Apr/2025 09:59:14] "GET / HTTP/1.1" 200 -
+2025-04-08 09:59:15,884 - INFO - 127.0.0.1 - - [08/Apr/2025 09:59:15] "GET / HTTP/1.1" 200 -
+2025-04-08 09:59:25,002 - INFO - Terminating subprocesses...
+2025-04-08 09:59:25,003 - INFO - Removed PID file for port 5001
+2025-04-08 09:59:25,003 - INFO - Removed PID file for port 5002
+2025-04-08 09:59:25,003 - INFO - Removed PID file for port 5003
+2025-04-08 09:59:25,003 - INFO - All subprocesses terminated.
+2025-04-08 09:59:26,139 - INFO - Started node.py on port 5001 with PID 15808
+2025-04-08 09:59:26,189 - INFO - Started node.py on port 5002 with PID 13532
+2025-04-08 09:59:26,212 - INFO - Started node.py on port 5003 with PID 17060
+2025-04-08 09:59:26,219 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-08 09:59:26,245 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.171.12:5000
+2025-04-08 09:59:26,245 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-08 09:59:27,894 - INFO - 127.0.0.1 - - [08/Apr/2025 09:59:27] "GET / HTTP/1.1" 200 -
+2025-04-08 09:59:28,255 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-08 09:59:28,255 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-08 09:59:29,169 - INFO - 127.0.0.1 - - [08/Apr/2025 09:59:29] "GET / HTTP/1.1" 200 -
+2025-04-08 09:59:30,285 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-08 09:59:38,876 - INFO - 127.0.0.1 - - [08/Apr/2025 09:59:38] "GET / HTTP/1.1" 200 -
+2025-04-08 09:59:40,394 - INFO - Terminating subprocesses...
+2025-04-08 09:59:40,411 - INFO - Removed PID file for port 5001
+2025-04-08 09:59:40,412 - INFO - Removed PID file for port 5002
+2025-04-08 09:59:40,412 - INFO - Removed PID file for port 5003
+2025-04-08 09:59:40,412 - INFO - All subprocesses terminated.
+2025-04-08 09:59:42,937 - INFO - Started node.py on port 5001 with PID 7832
+2025-04-08 09:59:42,959 - INFO - Started node.py on port 5002 with PID 2824
+2025-04-08 09:59:42,974 - INFO - Started node.py on port 5003 with PID 2184
+2025-04-08 09:59:42,990 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-08 09:59:43,008 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.171.12:5000
+2025-04-08 09:59:43,008 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-08 09:59:43,310 - INFO - 127.0.0.1 - - [08/Apr/2025 09:59:43] "GET / HTTP/1.1" 200 -
+2025-04-08 09:59:45,041 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-08 09:59:45,043 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-08 09:59:47,089 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-08 09:59:47,864 - INFO - Terminating subprocesses...
+2025-04-08 09:59:47,871 - INFO - Removed PID file for port 5001
+2025-04-08 09:59:47,871 - INFO - Removed PID file for port 5002
+2025-04-08 09:59:47,871 - INFO - Removed PID file for port 5003
+2025-04-08 09:59:47,871 - INFO - All subprocesses terminated.
+2025-04-08 09:59:58,847 - INFO - Started node.py on port 5001 with PID 2720
+2025-04-08 09:59:58,865 - INFO - Started node.py on port 5002 with PID 11548
+2025-04-08 09:59:58,886 - INFO - Started node.py on port 5003 with PID 4900
+2025-04-08 09:59:58,895 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-08 09:59:58,922 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.171.12:5000
+2025-04-08 09:59:58,922 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-08 10:00:00,929 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-08 10:00:00,929 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-08 10:00:02,967 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-08 10:00:04,106 - INFO - 127.0.0.1 - - [08/Apr/2025 10:00:04] "GET / HTTP/1.1" 200 -
+2025-04-08 10:00:05,381 - INFO - 127.0.0.1 - - [08/Apr/2025 10:00:05] "GET / HTTP/1.1" 200 -
+2025-04-08 10:00:37,339 - INFO - Terminating subprocesses...
+2025-04-08 10:00:37,368 - INFO - Removed PID file for port 5001
+2025-04-08 10:00:37,370 - INFO - Removed PID file for port 5002
+2025-04-08 10:00:37,370 - INFO - Removed PID file for port 5003
+2025-04-08 10:00:37,370 - INFO - All subprocesses terminated.
+2025-04-08 10:00:38,499 - INFO - Started node.py on port 5001 with PID 6128
+2025-04-08 10:00:38,522 - INFO - Started node.py on port 5002 with PID 6488
+2025-04-08 10:00:38,534 - INFO - Started node.py on port 5003 with PID 12200
+2025-04-08 10:00:38,543 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-08 10:00:38,587 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.171.12:5000
+2025-04-08 10:00:38,587 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-08 10:00:40,590 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-08 10:00:40,593 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-08 10:00:42,626 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-08 10:00:43,983 - INFO - 127.0.0.1 - - [08/Apr/2025 10:00:43] "GET / HTTP/1.1" 200 -
+2025-04-08 10:00:45,879 - INFO - 127.0.0.1 - - [08/Apr/2025 10:00:45] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-04-08 10:00:45,882 - INFO - 127.0.0.1 - - [08/Apr/2025 10:00:45] "GET /login?next=/logout HTTP/1.1" 200 -
+2025-04-08 10:00:51,143 - INFO - 127.0.0.1 - - [08/Apr/2025 10:00:51] "[32mPOST /login?next=/logout HTTP/1.1[0m" 302 -
+2025-04-08 10:00:51,170 - INFO - 127.0.0.1 - - [08/Apr/2025 10:00:51] "GET / HTTP/1.1" 200 -
+2025-04-08 10:01:00,797 - INFO - 127.0.0.1 - - [08/Apr/2025 10:01:00] "GET /browse HTTP/1.1" 200 -
+2025-04-08 10:01:42,629 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-08 10:01:44,670 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-08 10:01:44,675 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-08 10:01:46,702 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-08 10:02:46,706 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-08 10:02:48,744 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-08 10:02:48,744 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-08 10:02:50,769 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-08 10:03:50,773 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-08 10:03:52,808 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-08 10:03:52,810 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-08 10:03:54,835 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-08 10:04:54,839 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-08 10:04:56,872 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-08 10:04:56,877 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-08 10:04:58,899 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-08 10:05:58,905 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-08 10:06:00,928 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-08 10:06:00,933 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-08 10:06:02,973 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-08 10:07:02,976 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-08 10:07:05,008 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-08 10:07:05,008 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-08 10:07:07,041 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-08 10:08:07,043 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-08 10:08:09,078 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-08 10:08:09,083 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-08 10:08:11,107 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-08 16:06:24,240 - ERROR - Error removing stale PID file for port 5001: [WinError 32] The process cannot access the file because it is being used by another process: 'node_5001.pid'
+2025-04-08 16:06:24,240 - ERROR - Error removing stale PID file for port 5002: [WinError 32] The process cannot access the file because it is being used by another process: 'node_5002.pid'
+2025-04-08 16:06:24,240 - ERROR - Error removing stale PID file for port 5003: [WinError 32] The process cannot access the file because it is being used by another process: 'node_5003.pid'
+2025-04-08 16:06:24,250 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-08 16:06:24,268 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.171.12:5000
+2025-04-08 16:06:24,268 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-08 16:06:28,321 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5001): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DC3FF7B260>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-08 16:06:28,321 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-08 16:06:32,382 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5002): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DC4000F3E0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-08 16:07:32,384 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-08 16:07:36,437 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5001): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DC4000FA70>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-08 16:07:36,438 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-08 16:07:40,534 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5002): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DC4000F950>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-08 16:08:13,447 - INFO - 127.0.0.1 - - [08/Apr/2025 16:08:13] "GET / HTTP/1.1" 200 -
+2025-04-08 16:08:13,573 - INFO - 127.0.0.1 - - [08/Apr/2025 16:08:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-08 16:08:15,507 - INFO - 127.0.0.1 - - [08/Apr/2025 16:08:15] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-04-08 16:08:15,527 - INFO - 127.0.0.1 - - [08/Apr/2025 16:08:15] "GET /login?next=/logout HTTP/1.1" 200 -
+2025-04-08 16:08:33,177 - INFO - 127.0.0.1 - - [08/Apr/2025 16:08:33] "GET /browse HTTP/1.1" 200 -
+2025-04-08 16:08:37,620 - INFO - 127.0.0.1 - - [08/Apr/2025 16:08:37] "GET / HTTP/1.1" 200 -
+2025-04-08 16:08:39,781 - INFO - 127.0.0.1 - - [08/Apr/2025 16:08:39] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-04-08 16:08:39,789 - INFO - 127.0.0.1 - - [08/Apr/2025 16:08:39] "GET /login?next=/logout HTTP/1.1" 200 -
+2025-04-08 16:08:40,537 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-08 16:08:44,592 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5001): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DC400636E0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-08 16:08:44,594 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-08 16:08:48,655 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5002): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DC40063EC0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-08 16:09:19,376 - INFO - 127.0.0.1 - - [08/Apr/2025 16:09:19] "[32mPOST /login?next=/logout HTTP/1.1[0m" 302 -
+2025-04-08 16:09:19,453 - INFO - 127.0.0.1 - - [08/Apr/2025 16:09:19] "GET / HTTP/1.1" 200 -
+2025-04-08 16:09:25,143 - INFO - 127.0.0.1 - - [08/Apr/2025 16:09:25] "GET /browse HTTP/1.1" 200 -
+2025-04-08 16:09:34,611 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-08 16:09:38,656 - INFO - 127.0.0.1 - - [08/Apr/2025 16:09:38] "[32mGET /download/dfs/avatar.jpg HTTP/1.1[0m" 302 -
+2025-04-08 16:09:38,664 - INFO - 127.0.0.1 - - [08/Apr/2025 16:09:38] "GET /browse HTTP/1.1" 200 -
+2025-04-08 16:09:48,695 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-08 16:09:52,762 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5001): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DC40048590>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-08 16:09:52,762 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-08 16:09:56,830 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5002): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DC40048EC0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-08 16:10:56,834 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-08 16:11:00,910 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5001): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DC4000F590>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-08 16:11:00,912 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-08 16:11:04,993 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5002): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DC40034D70>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-08 16:12:04,994 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-08 16:12:09,037 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5001): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DC40062ED0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-08 16:12:09,037 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-08 16:12:13,084 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5002): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DC40063680>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-08 16:13:13,085 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-08 16:13:17,172 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5001): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DC3FFD4110>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-08 16:13:17,172 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-08 16:13:21,222 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5002): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DC40049130>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-08 16:15:08,474 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-08 16:15:12,525 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5001): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DC40063410>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-08 16:15:12,525 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-08 16:15:16,592 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5002): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DC40063B00>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-08 16:16:16,594 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-08 16:16:20,645 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5001): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DC40034E30>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-08 16:16:20,645 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-08 16:16:24,721 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5002): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DC4000FB00>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-08 16:17:24,722 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-08 16:17:28,777 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5001): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DC40049220>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-08 16:17:28,779 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-08 16:17:32,849 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5002): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DC40049AC0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-08 16:18:32,853 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-08 16:18:36,914 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5001): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DC4000E4E0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-08 16:18:36,914 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-08 16:18:40,972 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5002): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DC40034D70>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-08 16:19:40,976 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-08 16:19:45,062 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5001): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DC40063230>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-08 16:19:45,064 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-08 16:19:49,137 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5002): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DC400636E0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-08 16:20:49,138 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-08 16:20:53,201 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5001): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DC40049BB0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-08 16:20:53,201 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-08 16:20:57,259 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5002): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DC4004A3C0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-08 16:21:57,261 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-08 16:22:01,339 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5001): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DC40063920>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-08 16:22:01,341 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-11 02:47:09,456 - ERROR - Error removing stale PID file for port 5001: [WinError 32] The process cannot access the file because it is being used by another process: 'node_5001.pid'
+2025-04-11 02:47:09,456 - ERROR - Error removing stale PID file for port 5002: [WinError 32] The process cannot access the file because it is being used by another process: 'node_5002.pid'
+2025-04-11 02:47:09,456 - ERROR - Error removing stale PID file for port 5003: [WinError 32] The process cannot access the file because it is being used by another process: 'node_5003.pid'
+2025-04-11 02:47:09,473 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-11 02:47:09,508 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.171.12:5000
+2025-04-11 02:47:09,508 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-11 02:47:13,530 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5001): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001697B8195E0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-11 02:47:13,530 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-11 02:47:17,581 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5002): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001697B859490>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-11 02:47:23,753 - INFO - 127.0.0.1 - - [11/Apr/2025 02:47:23] "GET / HTTP/1.1" 200 -
+2025-04-11 02:47:23,969 - INFO - 127.0.0.1 - - [11/Apr/2025 02:47:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-11 02:47:35,779 - INFO - 127.0.0.1 - - [11/Apr/2025 02:47:35] "[32mGET /admin/dashboard HTTP/1.1[0m" 302 -
+2025-04-11 02:47:35,795 - INFO - 127.0.0.1 - - [11/Apr/2025 02:47:35] "GET /login?next=/admin/dashboard HTTP/1.1" 200 -
+2025-04-11 02:47:43,178 - INFO - 127.0.0.1 - - [11/Apr/2025 02:47:43] "[32mPOST /login?next=/admin/dashboard HTTP/1.1[0m" 302 -
+2025-04-11 02:47:43,268 - INFO - 127.0.0.1 - - [11/Apr/2025 02:47:43] "GET / HTTP/1.1" 200 -
+2025-04-11 02:47:48,589 - INFO - 127.0.0.1 - - [11/Apr/2025 02:47:48] "[32mGET /admin/dashboard HTTP/1.1[0m" 302 -
+2025-04-11 02:47:48,611 - INFO - 127.0.0.1 - - [11/Apr/2025 02:47:48] "GET / HTTP/1.1" 200 -
+2025-04-11 02:48:17,585 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-11 02:48:21,625 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5001): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001697B859D90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-11 02:48:21,627 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-11 02:48:25,711 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5002): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001697B891070>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-11 02:48:29,032 - INFO - 127.0.0.1 - - [11/Apr/2025 02:48:29] "[32mGET /admin/dashboard HTTP/1.1[0m" 302 -
+2025-04-11 02:48:29,078 - INFO - 127.0.0.1 - - [11/Apr/2025 02:48:29] "GET / HTTP/1.1" 200 -
+2025-04-11 02:48:32,253 - INFO - Terminating subprocesses...
+2025-04-11 02:48:32,255 - INFO - Removed PID file for port 5001
+2025-04-11 02:48:32,255 - INFO - Removed PID file for port 5002
+2025-04-11 02:48:32,255 - INFO - Removed PID file for port 5003
+2025-04-11 02:48:32,255 - INFO - All subprocesses terminated.
+2025-04-11 02:48:33,623 - INFO - Started node.py on port 5001 with PID 14364
+2025-04-11 02:48:33,644 - INFO - Started node.py on port 5002 with PID 22840
+2025-04-11 02:48:33,674 - INFO - Started node.py on port 5003 with PID 21448
+2025-04-11 02:48:33,682 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-11 02:48:33,699 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.171.12:5000
+2025-04-11 02:48:33,699 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-11 02:48:35,720 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-11 02:48:35,720 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-11 02:48:36,695 - INFO - 127.0.0.1 - - [11/Apr/2025 02:48:36] "GET / HTTP/1.1" 200 -
+2025-04-11 02:48:37,755 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-11 02:48:44,683 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-11 02:48:46,694 - DEBUG - http://localhost:5001 "GET /health HTTP/11" 500 265
+2025-04-11 02:48:46,694 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-11 02:48:48,713 - DEBUG - http://localhost:5002 "GET /health HTTP/11" 500 265
+2025-04-11 02:48:48,715 - DEBUG - Starting new HTTP connection (1): localhost:5003
+2025-04-11 02:48:50,741 - DEBUG - http://localhost:5003 "GET /health HTTP/11" 500 265
+2025-04-11 02:48:50,764 - INFO - 127.0.0.1 - - [11/Apr/2025 02:48:50] "GET /admin/dashboard HTTP/1.1" 200 -
+2025-04-11 02:48:50,844 - INFO - 127.0.0.1 - - [11/Apr/2025 02:48:50] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-04-11 02:48:50,883 - INFO - 127.0.0.1 - - [11/Apr/2025 02:48:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-11 02:49:37,757 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-11 02:49:39,806 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-11 02:49:39,806 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-11 02:49:41,842 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-11 02:49:56,467 - INFO - Terminating subprocesses...
+2025-04-11 02:49:56,516 - INFO - Removed PID file for port 5001
+2025-04-11 02:49:56,516 - INFO - Removed PID file for port 5002
+2025-04-11 02:49:56,527 - INFO - Removed PID file for port 5003
+2025-04-11 02:49:56,527 - INFO - All subprocesses terminated.
+2025-04-11 02:49:57,923 - INFO - Started node.py on port 5001 with PID 7092
+2025-04-11 02:49:57,944 - INFO - Started node.py on port 5002 with PID 5696
+2025-04-11 02:49:57,971 - INFO - Started node.py on port 5003 with PID 9448
+2025-04-11 02:49:57,981 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-11 02:49:58,006 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.171.12:5000
+2025-04-11 02:49:58,006 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-11 02:50:00,039 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-11 02:50:00,042 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-11 02:50:02,077 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-11 02:50:03,144 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-11 02:50:05,156 - DEBUG - http://localhost:5001 "GET /health HTTP/11" 200 21
+2025-04-11 02:50:05,158 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-11 02:50:07,186 - DEBUG - http://localhost:5002 "GET /health HTTP/11" 200 21
+2025-04-11 02:50:07,186 - DEBUG - Starting new HTTP connection (1): localhost:5003
+2025-04-11 02:50:09,217 - DEBUG - http://localhost:5003 "GET /health HTTP/11" 200 21
+2025-04-11 02:50:09,233 - INFO - 127.0.0.1 - - [11/Apr/2025 02:50:09] "GET /admin/dashboard HTTP/1.1" 200 -
+2025-04-11 02:50:09,286 - INFO - 127.0.0.1 - - [11/Apr/2025 02:50:09] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-04-11 02:50:09,302 - INFO - 127.0.0.1 - - [11/Apr/2025 02:50:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-11 02:50:17,684 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-11 02:50:19,686 - DEBUG - http://localhost:5001 "GET /health HTTP/11" 200 21
+2025-04-11 02:50:19,686 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-11 02:50:21,692 - DEBUG - http://localhost:5002 "GET /health HTTP/11" 200 21
+2025-04-11 02:50:21,697 - DEBUG - Starting new HTTP connection (1): localhost:5003
+2025-04-11 02:50:23,742 - DEBUG - http://localhost:5003 "GET /health HTTP/11" 200 21
+2025-04-11 02:50:23,744 - INFO - 127.0.0.1 - - [11/Apr/2025 02:50:23] "GET /admin/dashboard HTTP/1.1" 200 -
+2025-04-11 02:50:23,841 - INFO - 127.0.0.1 - - [11/Apr/2025 02:50:23] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-04-11 02:51:02,084 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-11 02:51:04,114 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-11 02:51:04,116 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-11 02:51:06,161 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-11 02:51:37,955 - INFO - Terminating subprocesses...
+2025-04-11 02:51:37,980 - INFO - Removed PID file for port 5001
+2025-04-11 02:51:37,980 - INFO - Removed PID file for port 5002
+2025-04-11 02:51:37,980 - INFO - Removed PID file for port 5003
+2025-04-11 02:51:37,980 - INFO - All subprocesses terminated.
+2025-04-11 02:51:39,686 - INFO - Started node.py on port 5001 with PID 15180
+2025-04-11 02:51:39,706 - INFO - Started node.py on port 5002 with PID 19008
+2025-04-11 02:51:39,729 - INFO - Started node.py on port 5003 with PID 19508
+2025-04-11 02:51:39,734 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-11 02:51:39,766 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.171.12:5000
+2025-04-11 02:51:39,766 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-11 02:51:41,778 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-11 02:51:41,785 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-11 02:51:43,809 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-11 02:51:46,739 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-11 02:51:48,752 - DEBUG - http://localhost:5001 "GET /health HTTP/11" 200 21
+2025-04-11 02:51:48,752 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-11 02:51:50,765 - DEBUG - http://localhost:5002 "GET /health HTTP/11" 200 21
+2025-04-11 02:51:50,767 - DEBUG - Starting new HTTP connection (1): localhost:5003
+2025-04-11 02:51:52,778 - DEBUG - http://localhost:5003 "GET /health HTTP/11" 200 21
+2025-04-11 02:51:52,792 - INFO - 127.0.0.1 - - [11/Apr/2025 02:51:52] "GET /admin/dashboard HTTP/1.1" 200 -
+2025-04-11 02:51:52,855 - INFO - 127.0.0.1 - - [11/Apr/2025 02:51:52] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-04-11 02:51:52,883 - INFO - 127.0.0.1 - - [11/Apr/2025 02:51:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-11 02:52:42,119 - INFO - Terminating subprocesses...
+2025-04-11 02:52:42,145 - INFO - Removed PID file for port 5001
+2025-04-11 02:52:42,146 - INFO - Removed PID file for port 5002
+2025-04-11 02:52:42,146 - INFO - Removed PID file for port 5003
+2025-04-11 02:52:42,146 - INFO - All subprocesses terminated.
+2025-04-11 02:52:58,929 - INFO - Started node.py on port 5001 with PID 22560
+2025-04-11 02:52:58,947 - INFO - Started node.py on port 5002 with PID 21448
+2025-04-11 02:52:58,968 - INFO - Started node.py on port 5003 with PID 19100
+2025-04-11 02:52:58,975 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-11 02:52:59,002 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.171.12:5000
+2025-04-11 02:52:59,041 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-11 02:53:00,953 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-11 02:53:01,020 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-11 02:53:01,024 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-11 02:53:02,973 - DEBUG - http://localhost:5001 "GET /health HTTP/11" 200 21
+2025-04-11 02:53:02,976 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-11 02:53:03,060 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-11 02:53:04,982 - DEBUG - http://localhost:5002 "GET /health HTTP/11" 200 21
+2025-04-11 02:53:04,982 - DEBUG - Starting new HTTP connection (1): localhost:5003
+2025-04-11 02:53:06,985 - DEBUG - http://localhost:5003 "GET /health HTTP/11" 200 21
+2025-04-11 02:53:07,003 - INFO - 127.0.0.1 - - [11/Apr/2025 02:53:07] "GET /admin/dashboard HTTP/1.1" 200 -
+2025-04-11 02:53:07,074 - INFO - 127.0.0.1 - - [11/Apr/2025 02:53:07] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-04-11 02:53:07,095 - INFO - 127.0.0.1 - - [11/Apr/2025 02:53:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-11 02:54:00,366 - INFO - Terminating subprocesses...
+2025-04-11 02:54:00,384 - INFO - Removed PID file for port 5001
+2025-04-11 02:54:00,386 - INFO - Removed PID file for port 5002
+2025-04-11 02:54:00,386 - INFO - Removed PID file for port 5003
+2025-04-11 02:54:00,386 - INFO - All subprocesses terminated.
+2025-04-11 02:54:02,136 - INFO - Started node.py on port 5001 with PID 18788
+2025-04-11 02:54:02,157 - INFO - Started node.py on port 5002 with PID 10900
+2025-04-11 02:54:02,179 - INFO - Started node.py on port 5003 with PID 15432
+2025-04-11 02:54:02,186 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-11 02:54:02,210 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.171.12:5000
+2025-04-11 02:54:02,210 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-11 02:54:04,224 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-11 02:54:04,224 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-11 02:54:04,531 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-11 02:54:06,274 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-11 02:54:06,540 - DEBUG - http://localhost:5001 "GET /health HTTP/11" 200 21
+2025-04-11 02:54:06,541 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-11 02:54:08,555 - DEBUG - http://localhost:5002 "GET /health HTTP/11" 200 21
+2025-04-11 02:54:08,557 - DEBUG - Starting new HTTP connection (1): localhost:5003
+2025-04-11 02:54:10,560 - DEBUG - http://localhost:5003 "GET /health HTTP/11" 200 21
+2025-04-11 02:54:10,576 - INFO - 127.0.0.1 - - [11/Apr/2025 02:54:10] "GET /admin/dashboard HTTP/1.1" 200 -
+2025-04-11 02:54:10,640 - INFO - 127.0.0.1 - - [11/Apr/2025 02:54:10] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-04-11 02:54:30,067 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-11 02:54:32,071 - DEBUG - http://localhost:5001 "GET /health HTTP/11" 200 21
+2025-04-11 02:54:32,076 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-11 02:54:34,092 - DEBUG - http://localhost:5002 "GET /health HTTP/11" 200 21
+2025-04-11 02:54:34,092 - DEBUG - Starting new HTTP connection (1): localhost:5003
+2025-04-11 02:54:36,094 - DEBUG - http://localhost:5003 "GET /health HTTP/11" 200 21
+2025-04-11 02:54:36,094 - INFO - 127.0.0.1 - - [11/Apr/2025 02:54:36] "GET /admin/dashboard HTTP/1.1" 200 -
+2025-04-11 02:54:36,164 - INFO - 127.0.0.1 - - [11/Apr/2025 02:54:36] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-04-11 02:54:36,206 - INFO - 127.0.0.1 - - [11/Apr/2025 02:54:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-11 02:55:06,280 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-11 02:55:08,322 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-11 02:55:08,327 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-11 02:55:10,351 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-11 02:55:18,275 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-11 02:55:20,287 - DEBUG - http://localhost:5001 "GET /health HTTP/11" 200 21
+2025-04-11 02:55:20,287 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-11 02:55:22,292 - DEBUG - http://localhost:5002 "GET /health HTTP/11" 200 21
+2025-04-11 02:55:22,292 - DEBUG - Starting new HTTP connection (1): localhost:5003
+2025-04-11 02:55:26,307 - INFO - 127.0.0.1 - - [11/Apr/2025 02:55:26] "GET /admin/dashboard HTTP/1.1" 200 -
+2025-04-11 02:55:26,436 - INFO - 127.0.0.1 - - [11/Apr/2025 02:55:26] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-04-11 02:55:26,466 - INFO - 127.0.0.1 - - [11/Apr/2025 02:55:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-11 02:56:10,358 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-11 02:56:12,396 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-11 02:56:12,396 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-11 02:56:14,439 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-11 02:57:14,444 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-11 02:57:16,476 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-11 02:57:16,476 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-11 02:57:18,509 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-11 02:58:18,518 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-11 02:58:20,552 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-11 02:58:20,556 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-11 02:58:22,591 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-11 02:59:22,596 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-11 02:59:24,628 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-11 02:59:24,628 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-11 02:59:26,664 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-11 02:59:54,607 - INFO - Terminating subprocesses...
+2025-04-11 02:59:54,623 - INFO - Removed PID file for port 5001
+2025-04-11 02:59:54,623 - INFO - Removed PID file for port 5002
+2025-04-11 02:59:54,623 - INFO - Removed PID file for port 5003
+2025-04-11 02:59:54,623 - INFO - All subprocesses terminated.
+2025-04-11 02:59:56,415 - INFO - Started node.py on port 5001 with PID 11404
+2025-04-11 02:59:56,435 - INFO - Started node.py on port 5002 with PID 24248
+2025-04-11 02:59:56,451 - INFO - Started node.py on port 5003 with PID 21508
+2025-04-11 02:59:56,460 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-11 02:59:56,481 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.171.12:5000
+2025-04-11 02:59:56,481 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-11 02:59:58,506 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-11 02:59:58,508 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-11 03:00:00,546 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-11 03:00:01,519 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-11 03:00:03,547 - DEBUG - http://localhost:5001 "GET /health HTTP/11" 200 21
+2025-04-11 03:00:03,551 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-11 03:00:05,562 - DEBUG - http://localhost:5002 "GET /health HTTP/11" 200 21
+2025-04-11 03:00:05,564 - DEBUG - Starting new HTTP connection (1): localhost:5003
+2025-04-11 03:00:07,583 - DEBUG - http://localhost:5003 "GET /health HTTP/11" 200 21
+2025-04-11 03:00:07,583 - INFO - 127.0.0.1 - - [11/Apr/2025 03:00:07] "GET /admin/dashboard HTTP/1.1" 200 -
+2025-04-11 03:01:00,551 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-11 03:01:02,596 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-11 03:01:02,596 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-11 03:01:04,637 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-11 03:01:33,364 - INFO - 127.0.0.1 - - [11/Apr/2025 03:01:33] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-04-11 03:01:33,397 - INFO - 127.0.0.1 - - [11/Apr/2025 03:01:33] "GET /login HTTP/1.1" 200 -
+2025-04-11 03:02:04,642 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-11 03:02:06,669 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-11 03:02:06,672 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-11 03:02:08,691 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-11 03:03:08,697 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-11 03:03:10,729 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-11 03:03:10,729 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-11 03:03:12,761 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-11 03:04:12,769 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-11 03:04:14,809 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-11 03:04:14,815 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-11 03:04:16,866 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-11 03:05:16,871 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-11 03:05:18,910 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-11 03:05:18,912 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-11 03:05:20,938 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-11 08:32:35,480 - ERROR - Error removing stale PID file for port 5001: [WinError 32] The process cannot access the file because it is being used by another process: 'node_5001.pid'
+2025-04-11 08:32:35,484 - ERROR - Error removing stale PID file for port 5002: [WinError 32] The process cannot access the file because it is being used by another process: 'node_5002.pid'
+2025-04-11 08:32:35,484 - ERROR - Error removing stale PID file for port 5003: [WinError 32] The process cannot access the file because it is being used by another process: 'node_5003.pid'
+2025-04-11 08:32:35,488 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-11 08:32:36,823 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.171.12:5000
+2025-04-11 08:32:36,823 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-11 08:32:39,567 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5001): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002015EE0E540>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-11 08:32:39,567 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-11 08:32:43,622 - ERROR - Error during reconciliation: HTTPConnectionPool(host='localhost', port=5002): Max retries exceeded with url: /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002015EE41070>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-11 08:32:44,370 - INFO - 127.0.0.1 - - [11/Apr/2025 08:32:44] "GET / HTTP/1.1" 200 -
+2025-04-11 08:32:44,550 - INFO - 127.0.0.1 - - [11/Apr/2025 08:32:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-11 08:32:48,091 - INFO - 127.0.0.1 - - [11/Apr/2025 08:32:48] "[32mGET /upload HTTP/1.1[0m" 302 -
+2025-04-11 08:32:48,112 - INFO - 127.0.0.1 - - [11/Apr/2025 08:32:48] "GET /login?next=/upload HTTP/1.1" 200 -
+2025-04-11 08:33:00,820 - INFO - 127.0.0.1 - - [11/Apr/2025 08:33:00] "GET /login?next=/upload HTTP/1.1" 200 -
+2025-04-11 08:33:09,019 - INFO - 127.0.0.1 - - [11/Apr/2025 08:33:09] "GET /login?next=/upload HTTP/1.1" 200 -
+2025-04-11 08:33:14,629 - INFO - Terminating subprocesses...
+2025-04-11 08:33:14,629 - INFO - Removed PID file for port 5001
+2025-04-11 08:33:14,629 - INFO - Removed PID file for port 5002
+2025-04-11 08:33:14,632 - INFO - Removed PID file for port 5003
+2025-04-11 08:33:14,632 - INFO - All subprocesses terminated.
+2025-04-11 08:33:16,663 - INFO - Started node.py on port 5001 with PID 13596
+2025-04-11 08:33:16,697 - INFO - Started node.py on port 5002 with PID 4012
+2025-04-11 08:33:16,713 - INFO - Started node.py on port 5003 with PID 17488
+2025-04-11 08:33:16,724 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-11 08:33:18,176 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.171.12:5000
+2025-04-11 08:33:18,176 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-11 08:33:18,799 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-11 08:33:18,803 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-11 08:33:20,841 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-11 08:33:21,751 - INFO - 127.0.0.1 - - [11/Apr/2025 08:33:21] "GET /login?next=/upload HTTP/1.1" 200 -
+2025-04-11 08:33:41,110 - INFO - 127.0.0.1 - - [11/Apr/2025 08:33:41] "[32mPOST /login?next=/upload HTTP/1.1[0m" 302 -
+2025-04-11 08:33:41,151 - INFO - 127.0.0.1 - - [11/Apr/2025 08:33:41] "GET / HTTP/1.1" 200 -
+2025-04-11 08:33:43,446 - INFO - 127.0.0.1 - - [11/Apr/2025 08:33:43] "GET /browse HTTP/1.1" 200 -
+2025-04-11 08:33:47,374 - INFO - 127.0.0.1 - - [11/Apr/2025 08:33:47] "GET / HTTP/1.1" 200 -
+2025-04-11 08:33:50,936 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-11 08:33:52,940 - DEBUG - http://localhost:5001 "GET /health HTTP/11" 200 21
+2025-04-11 08:33:52,940 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-11 08:33:54,966 - DEBUG - http://localhost:5002 "GET /health HTTP/11" 200 21
+2025-04-11 08:33:54,966 - DEBUG - Starting new HTTP connection (1): localhost:5003
+2025-04-11 08:33:56,985 - DEBUG - http://localhost:5003 "GET /health HTTP/11" 200 21
+2025-04-11 08:33:57,038 - INFO - 127.0.0.1 - - [11/Apr/2025 08:33:57] "GET /admin/dashboard HTTP/1.1" 200 -
+2025-04-11 08:34:20,848 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-11 08:34:22,897 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-11 08:34:22,897 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-11 08:34:24,945 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-11 08:34:38,067 - INFO - 127.0.0.1 - - [11/Apr/2025 08:34:38] "GET /browse HTTP/1.1" 200 -
+2025-04-11 08:34:42,507 - INFO - 127.0.0.1 - - [11/Apr/2025 08:34:42] "GET /upload HTTP/1.1" 200 -
+2025-04-11 08:35:24,952 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-04-11 08:35:27,000 - DEBUG - http://localhost:5001 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-11 08:35:27,004 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-04-11 08:35:29,055 - DEBUG - http://localhost:5002 "GET /chunk/444f4e6d-de5b-4a42-8450-0920a2572e9a/exists HTTP/11" 200 16
+2025-04-11 08:35:37,020 - INFO - Terminating subprocesses...
+2025-04-11 08:35:37,027 - INFO - Removed PID file for port 5001
+2025-04-11 08:35:37,027 - INFO - Removed PID file for port 5002
+2025-04-11 08:35:37,029 - INFO - Removed PID file for port 5003
+2025-04-11 08:35:37,029 - INFO - All subprocesses terminated.
+2025-04-21 09:03:28,484 - INFO - Started node.py on port 5001 with PID 16184
+2025-04-21 09:03:28,497 - INFO - Started node.py on port 5002 with PID 15956
+2025-04-21 09:03:28,519 - INFO - Started node.py on port 5003 with PID 12768
+2025-04-21 09:03:28,579 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.187.12:5000
+2025-04-21 09:03:28,579 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-21 09:03:37,710 - INFO - Terminating subprocesses...
+2025-04-21 09:03:37,710 - INFO - Removed PID file for port 5001
+2025-04-21 09:03:37,710 - INFO - Removed PID file for port 5002
+2025-04-21 09:03:37,710 - INFO - Removed PID file for port 5003
+2025-04-21 09:03:37,710 - INFO - All subprocesses terminated.

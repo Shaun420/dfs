@@ -1,0 +1,47 @@
+---
+// src/layouts/MainLayout.astro
+
+// Import the single client-side React root component
+import AppRoot from '../components/AppRoot.jsx'; // <-- Import AppRoot
+
+// No longer import AuthProvider here.
+// import { AuthProvider } from '../context/AuthContext.jsx';
+
+import "../styles/global.css";
+
+// Get props
+const { title } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title} - Distributed File System</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    {/* src/layouts/MainLayout.astro - Inline Script */}
+    <script is:inline>
+      const theme = localStorage.getItem('theme');
+      // Correct logic: ADD 'dark' if dark is preferred, REMOVE 'dark' otherwise
+      if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark'); // Add dark class
+      } else {
+        // If theme is 'light' OR no theme and system is light:
+        document.documentElement.classList.remove('dark'); // <-- Crucial: REMOVE dark class
+      }
+    </script>
+
+  </head>
+  <body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+
+    {/* --- Render the single React Root Component --- */}
+    {/* Use client:load (or your preferred client directive) on AppRoot. */}
+    {/* This hydrates AppRoot and all its children (Sidebar, Header, slot content) as a single React island. */}
+    {/* Remove client: directives from Sidebar/Header/slot children. */}
+    <AppRoot client:load> {/* <-- Single hydration point, use client:load */}
+      <slot /> {/* Pass the page content into AppRoot as children */}
+    </AppRoot>
+
+  </body>
+</html>

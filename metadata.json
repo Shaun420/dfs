@@ -1,0 +1,18 @@
+{
+  "file_to_chunks": {
+    "/WhatsApp Image 2025-05-13 at 09.38.49_5da24bed.jpg": [
+      "9b1cf265-5adc-4450-bf75-f510baedcfce"
+    ]
+  },
+  "chunk_metadata": {
+    "9b1cf265-5adc-4450-bf75-f510baedcfce": {
+      "chunk_servers": [
+        "node1",
+        "node2"
+      ],
+      "version": 0,
+      "primary": "node1",
+      "lease_expiration": "2025-05-14T23:27:44.085315"
+    }
+  }
+}

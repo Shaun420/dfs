@@ -1,0 +1,14 @@
+/* src/styles/global.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Your custom CSS here */
+/* Do NOT import JS files */
+/* @import "./path/to/some.js"; // <-- DO NOT DO THIS */
+html,
+body {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}

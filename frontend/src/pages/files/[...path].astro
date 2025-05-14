@@ -1,0 +1,78 @@
+---
+// src/pages/files/[[...path]].astro
+// This is an Astro page file, designed to be server-rendered by default.
+// It should NOT contain React hooks like useState directly in this block.
+
+// Import your main layout component
+import MainLayout from '../../layouts/MainLayout.astro'; // Assuming MainLayout is the correct name
+
+// Import the React FileExplorer component
+// This is the main interactive component that manages the file view and uploads.
+import FileExplorer from '../../components/FileExplorer.jsx';
+
+// Import the Header component if it's a separate React island for authentication status
+// If Header is purely static HTML, you can remove the client:load directive.
+import Header from '../../components/Header.jsx';
+
+// You do NOT need to import useState, FileUploader, or BreadcrumbNav here
+// because FileExplorer manages and renders them internally according to your JSX code.
+// remove: import { useState } from "react";
+// remove: import FileUploader from '../../components/FileUploader.jsx';
+// remove: import BreadcrumbNav from '../../components/BreadcrumbNav.jsx';
+
+
+// Get the path segments from the URL via Astro.params in the frontmatter script block
+// Astro.params is available during Astro's server rendering.
+// params.path will be an array like ['folder1', 'subfolder'] for /files/folder1/subfolder
+// It will be undefined for /files/
+const path = Astro.params.path || "";
+
+// Construct the initial directory string like '/folder1/subfolder/' or '/'
+// Your FileExplorer expects a string path, likely with a trailing slash for directories.
+// Ensure the initial path is formatted consistently.
+const initialDir = '/' + path + (path.length > 0 ? '/' : '');
+
+// You do NOT define React state or functions that use React hooks here in the frontmatter.
+// remove: const [currentPath, setCurrentPath] = useState(`/${path}`);
+// remove: const handleFileAction = () => { ... };
+
+// You also do NOT export a function like in React components.
+// remove: export default FilesPathPage;
+---
+
+<!-- This part is the HTML/JSX output of the Astro page -->
+<MainLayout title={`DFS: ${initialDir}`}> {/* Use the main layout and set the title */}
+
+  {/*
+    Render the Header React component as an island.
+    If Header needs to be interactive (e.g., show auth status), it needs `client:load`.
+  */}
+  <Header client:load />
+
+  <div class="container mx-auto p-4 mt-16">
+
+    {/*
+      Render the FileExplorer React component as the main interactive part.
+      It must use a `client:` directive (like `client:load`)
+      because FileExplorer uses React state and effects.
+
+      Pass the initial path determined from the URL (initialDir) as a prop.
+      Your FileExplorer component MUST accept an `initialPath` prop and
+      use it to initialize its internal `currentPath` state and history.
+      (We updated your FileExplorer code in the previous response to do this).
+
+      Remove the direct rendering of FileUploader and BreadcrumbNav here,
+      as FileExplorer renders them internally when needed.
+    */}
+    <FileExplorer
+        initialPath={initialDir}
+        client:load
+    />
+
+    {/* remove: <BreadcrumbNav path={currentPath} onNavigate={setCurrentPath} /> */}
+    {/* remove: <FileUploader currentPath={currentPath} onClose={handleFileAction} onUploadComplete={handleFileAction} /> */}
+
+  </div>
+</MainLayout>
+
+<!-- No default export function needed at the end of an Astro page -->
