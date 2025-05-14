@@ -73,7 +73,10 @@ export default defineConfig({
   // --- Development Server Configuration ---
   // These options configure the behavior of the 'astro dev' command.
   server: {
-    // --- Configure proxying for API calls ---
+	host: true,
+	port: 4321,
+	allowedHosts: ['shaunak6.centralindia.cloudapp.azure.com', 'server.shaun420.eu.org'],
+	// --- Configure proxying for API calls ---
     // This tells Astro's dev server to intercept browser requests that match a specified path
     // and forward them to a different target URL (your backend API Gateway).
     // This is crucial for making client-side fetch requests work seamlessly.
