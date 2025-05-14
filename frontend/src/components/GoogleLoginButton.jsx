@@ -8,7 +8,11 @@ import React, { useState, useEffect, useRef } from 'react';
 // Define the base URL of your backend API Gateway.
 // This is the URL the fetch request will be sent to.
 // This URL should be configured in your Astro proxy to forward requests starting with /google.
-const BACKEND_BASE_URL = 'https://localhost'; // <-- CONFIGURE THIS URL for your backend API Gateway
+
+let BACKEND_BASE_URL = "https://server.shaun420.eu.org";
+if (import.meta.env.DEV) {
+	BACKEND_BASE_URL = "https://localhost";
+}
 
 // Interval time for polling the backend status (in milliseconds)
 const POLL_INTERVAL = 3000; // Check login status every 3 seconds (adjust as needed)

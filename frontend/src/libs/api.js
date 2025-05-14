@@ -5,7 +5,10 @@
  */
 
 // Base URL for API requests
-const API_BASE_URL = 'http://127.0.0.1:5100';  // Empty string for same-origin requests
+let API_BASE_URL = "https://server.shaun420.eu.org";
+if (import.meta.env.DEV) {
+	API_BASE_URL = "https://localhost";
+}
 
 /**
  * Generic request handler with error management

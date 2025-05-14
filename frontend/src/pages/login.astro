@@ -16,7 +16,10 @@ import MainLayout from '../layouts/MainLayout.astro'; // Assuming MainLayout is 
 // The Header component in the layout might display a login/logout button based on context,
 // but this specific page's link is the primary entry point for an unauthenticated user.
 
-const BACKEND_URL = "https://localhost";
+let BACKEND_URL = "https://server.shaun420.eu.org";
+if (import.meta.env.DEV) {
+	BACKEND_URL = "https://localhost";
+}
 const BACKEND_LOGIN_URL = `${BACKEND_URL}/google/login`;
 
 // No React hooks or component function definition is used directly in this Astro page's frontmatter.

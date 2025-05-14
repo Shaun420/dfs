@@ -2349,3 +2349,30 @@ KeyError: 'replicas'
 2025-05-15 00:08:19,133 - DEBUG - http://localhost:5001 "GET /chunk/9b1cf265-5adc-4450-bf75-f510baedcfce HTTP/11" 200 166999
 2025-05-15 00:08:19,135 - INFO - 127.0.0.1 - - [15/May/2025 00:08:19] "[35m[1mGET /download/WhatsApp%2520Image%25202025-05-13%2520at%252009.38.49_5da24bed.jpg HTTP/1.1[0m" 500 -
 2025-05-15 00:08:19,202 - INFO - 127.0.0.1 - - [15/May/2025 00:08:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-15 00:08:36,783 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5100
+ * Running on http://192.168.187.12:5100
+2025-05-15 00:08:36,783 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-15 00:08:40,346 - INFO - Decoded path: /WhatsApp Image 2025-05-13 at 09.38.49_5da24bed.jpg
+2025-05-15 00:08:40,350 - DEBUG - Starting new HTTP connection (1): localhost:5000
+2025-05-15 00:08:42,393 - DEBUG - http://localhost:5000 "GET /api/file?path=/WhatsApp%20Image%202025-05-13%20at%2009.38.49_5da24bed.jpg HTTP/11" 200 276
+2025-05-15 00:08:42,394 - INFO - metadata: {'metadata': {'chunks': [{'chunk_id': '9b1cf265-5adc-4450-bf75-f510baedcfce', 'chunk_servers': ['node1', 'node2']}], 'size': 0}, 'path': '/WhatsApp Image 2025-05-13 at 09.38.49_5da24bed.jpg'}
+2025-05-15 00:08:42,395 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-05-15 00:08:44,421 - DEBUG - http://localhost:5001 "GET /chunk/9b1cf265-5adc-4450-bf75-f510baedcfce/exists HTTP/11" 200 16
+2025-05-15 00:08:44,421 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-05-15 00:08:46,469 - DEBUG - http://localhost:5001 "GET /chunk/9b1cf265-5adc-4450-bf75-f510baedcfce HTTP/11" 200 166999
+2025-05-15 00:08:46,472 - INFO - 127.0.0.1 - - [15/May/2025 00:08:46] "GET /download/WhatsApp%2520Image%25202025-05-13%2520at%252009.38.49_5da24bed.jpg HTTP/1.1" 200 -
+2025-05-15 00:08:54,910 - INFO - 127.0.0.1 - - [15/May/2025 00:08:54] "OPTIONS /browse?dir=/ HTTP/1.1" 200 -
+2025-05-15 00:08:54,936 - DEBUG - Starting new HTTP connection (1): localhost:5000
+2025-05-15 00:08:56,967 - DEBUG - http://localhost:5000 "GET /api/list?directory=/ HTTP/11" 200 88
+2025-05-15 00:08:56,968 - INFO - 127.0.0.1 - - [15/May/2025 00:08:56] "GET /browse?dir=/ HTTP/1.1" 200 -
+2025-05-15 00:08:58,020 - INFO - Decoded path: /WhatsApp Image 2025-05-13 at 09.38.49_5da24bed.jpg
+2025-05-15 00:08:58,021 - DEBUG - Starting new HTTP connection (1): localhost:5000
+2025-05-15 00:09:00,077 - DEBUG - http://localhost:5000 "GET /api/file?path=/WhatsApp%20Image%202025-05-13%20at%2009.38.49_5da24bed.jpg HTTP/11" 200 276
+2025-05-15 00:09:00,077 - INFO - metadata: {'metadata': {'chunks': [{'chunk_id': '9b1cf265-5adc-4450-bf75-f510baedcfce', 'chunk_servers': ['node1', 'node2']}], 'size': 0}, 'path': '/WhatsApp Image 2025-05-13 at 09.38.49_5da24bed.jpg'}
+2025-05-15 00:09:00,081 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-05-15 00:09:02,110 - DEBUG - http://localhost:5001 "GET /chunk/9b1cf265-5adc-4450-bf75-f510baedcfce/exists HTTP/11" 200 16
+2025-05-15 00:09:02,112 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-05-15 00:09:04,150 - DEBUG - http://localhost:5001 "GET /chunk/9b1cf265-5adc-4450-bf75-f510baedcfce HTTP/11" 200 166999
+2025-05-15 00:09:04,156 - INFO - 127.0.0.1 - - [15/May/2025 00:09:04] "GET /download/WhatsApp%2520Image%25202025-05-13%2520at%252009.38.49_5da24bed.jpg HTTP/1.1" 200 -

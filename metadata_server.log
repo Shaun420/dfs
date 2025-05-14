@@ -6574,3 +6574,58 @@
 2025-05-15 00:08:35,362 - INFO - Removed PID file for port 5002
 2025-05-15 00:08:35,363 - INFO - Removed PID file for port 5003
 2025-05-15 00:08:35,363 - INFO - All subprocesses terminated.
+2025-05-15 00:08:36,519 - INFO - Started node.py on port 5001 with PID 18232
+2025-05-15 00:08:36,534 - INFO - Started node.py on port 5002 with PID 5004
+2025-05-15 00:08:36,553 - INFO - Started node.py on port 5003 with PID 2396
+2025-05-15 00:08:36,559 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-05-15 00:08:36,596 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.187.12:5000
+2025-05-15 00:08:36,596 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-15 00:08:38,599 - DEBUG - http://localhost:5001 "GET /chunk/9b1cf265-5adc-4450-bf75-f510baedcfce/exists HTTP/11" 200 16
+2025-05-15 00:08:38,601 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-05-15 00:08:40,646 - DEBUG - http://localhost:5002 "GET /chunk/9b1cf265-5adc-4450-bf75-f510baedcfce/exists HTTP/11" 200 16
+2025-05-15 00:08:42,392 - INFO - 127.0.0.1 - - [15/May/2025 00:08:42] "GET /api/file?path=/WhatsApp%20Image%202025-05-13%20at%2009.38.49_5da24bed.jpg HTTP/1.1" 200 -
+2025-05-15 00:08:56,966 - INFO - 127.0.0.1 - - [15/May/2025 00:08:56] "GET /api/list?directory=/ HTTP/1.1" 200 -
+2025-05-15 00:09:00,077 - INFO - 127.0.0.1 - - [15/May/2025 00:09:00] "GET /api/file?path=/WhatsApp%20Image%202025-05-13%20at%2009.38.49_5da24bed.jpg HTTP/1.1" 200 -
+2025-05-15 00:09:40,649 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-05-15 00:09:42,674 - DEBUG - http://localhost:5001 "GET /chunk/9b1cf265-5adc-4450-bf75-f510baedcfce/exists HTTP/11" 200 16
+2025-05-15 00:09:42,677 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-05-15 00:09:44,705 - DEBUG - http://localhost:5002 "GET /chunk/9b1cf265-5adc-4450-bf75-f510baedcfce/exists HTTP/11" 200 16
+2025-05-15 00:10:44,709 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-05-15 00:10:46,756 - DEBUG - http://localhost:5001 "GET /chunk/9b1cf265-5adc-4450-bf75-f510baedcfce/exists HTTP/11" 200 16
+2025-05-15 00:10:46,758 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-05-15 00:10:48,791 - DEBUG - http://localhost:5002 "GET /chunk/9b1cf265-5adc-4450-bf75-f510baedcfce/exists HTTP/11" 200 16
+2025-05-15 00:11:48,794 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-05-15 00:11:50,839 - DEBUG - http://localhost:5001 "GET /chunk/9b1cf265-5adc-4450-bf75-f510baedcfce/exists HTTP/11" 200 16
+2025-05-15 00:11:50,842 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-05-15 00:11:52,892 - DEBUG - http://localhost:5002 "GET /chunk/9b1cf265-5adc-4450-bf75-f510baedcfce/exists HTTP/11" 200 16
+2025-05-15 00:12:52,894 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-05-15 00:12:54,926 - DEBUG - http://localhost:5001 "GET /chunk/9b1cf265-5adc-4450-bf75-f510baedcfce/exists HTTP/11" 200 16
+2025-05-15 00:12:54,927 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-05-15 00:12:56,958 - DEBUG - http://localhost:5002 "GET /chunk/9b1cf265-5adc-4450-bf75-f510baedcfce/exists HTTP/11" 200 16
+2025-05-15 00:13:56,961 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-05-15 00:13:58,996 - DEBUG - http://localhost:5001 "GET /chunk/9b1cf265-5adc-4450-bf75-f510baedcfce/exists HTTP/11" 200 16
+2025-05-15 00:13:58,999 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-05-15 00:14:01,027 - DEBUG - http://localhost:5002 "GET /chunk/9b1cf265-5adc-4450-bf75-f510baedcfce/exists HTTP/11" 200 16
+2025-05-15 00:15:09,403 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-05-15 00:15:11,434 - DEBUG - http://localhost:5001 "GET /chunk/9b1cf265-5adc-4450-bf75-f510baedcfce/exists HTTP/11" 200 16
+2025-05-15 00:15:11,436 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-05-15 00:15:13,472 - DEBUG - http://localhost:5002 "GET /chunk/9b1cf265-5adc-4450-bf75-f510baedcfce/exists HTTP/11" 200 16
+2025-05-15 00:16:13,475 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-05-15 00:16:15,510 - DEBUG - http://localhost:5001 "GET /chunk/9b1cf265-5adc-4450-bf75-f510baedcfce/exists HTTP/11" 200 16
+2025-05-15 00:16:15,512 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-05-15 00:16:17,570 - DEBUG - http://localhost:5002 "GET /chunk/9b1cf265-5adc-4450-bf75-f510baedcfce/exists HTTP/11" 200 16
+2025-05-15 00:17:17,572 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-05-15 00:17:19,629 - DEBUG - http://localhost:5001 "GET /chunk/9b1cf265-5adc-4450-bf75-f510baedcfce/exists HTTP/11" 200 16
+2025-05-15 00:17:19,631 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-05-15 00:17:21,675 - DEBUG - http://localhost:5002 "GET /chunk/9b1cf265-5adc-4450-bf75-f510baedcfce/exists HTTP/11" 200 16
+2025-05-15 00:18:21,676 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-05-15 00:18:23,730 - DEBUG - http://localhost:5001 "GET /chunk/9b1cf265-5adc-4450-bf75-f510baedcfce/exists HTTP/11" 200 16
+2025-05-15 00:18:23,730 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-05-15 00:18:25,786 - DEBUG - http://localhost:5002 "GET /chunk/9b1cf265-5adc-4450-bf75-f510baedcfce/exists HTTP/11" 200 16
+2025-05-15 00:19:25,788 - DEBUG - Starting new HTTP connection (1): localhost:5001
+2025-05-15 00:19:27,835 - DEBUG - http://localhost:5001 "GET /chunk/9b1cf265-5adc-4450-bf75-f510baedcfce/exists HTTP/11" 200 16
+2025-05-15 00:19:27,837 - DEBUG - Starting new HTTP connection (1): localhost:5002
+2025-05-15 00:19:29,868 - DEBUG - http://localhost:5002 "GET /chunk/9b1cf265-5adc-4450-bf75-f510baedcfce/exists HTTP/11" 200 16
