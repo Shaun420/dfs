@@ -140,5 +140,5 @@ export default defineConfig({
   // Add other project-specific configurations here as needed.
   // outDir: './dist', // Specify the build output directory
   // site: 'https://www.yourdfs.com', // Your production website URL
-  // base: '/', // The base path for your project (if not hosted at the root)
+  base: '/', // The base path for your project (if not hosted at the root)
 });
